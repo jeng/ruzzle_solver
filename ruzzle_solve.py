@@ -31,13 +31,6 @@ def get(ruzzle, pos):
     x, y = pos
     return ruzzle[y][x]
 
-def get_prefix_words(prefix):
-    results = []
-    for w in words:
-        if re.search(prefix + "*", w):
-            results.append(w)
-    return results
-
 
 def in_range(pos):
     x, y = pos
